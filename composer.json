@@ -1,0 +1,21 @@
+{
+    "name": "HeadFirstDesignPatterns",
+    "description": "Exercises of the book: Head First Design Patterns.",
+    "keywords": ["HeadFirstDesignPatterns", "design", "patterns"],
+    "type": "project",
+    "require": {
+        "php": "5.6.*"
+    },
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Nacho Salvador",
+            "email": "nachosalvador83@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HeadFirstDesignPatterns\\": ""
+        }
+    }
+}
