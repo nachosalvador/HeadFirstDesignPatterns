@@ -17,6 +17,13 @@ abstract class Pizza
     public function prepare()
     {
         print('Preparing ' . $this->name . PHP_EOL);
+        print('Tossing dough...' . PHP_EOL);
+        print('Adding sauce...' . PHP_EOL);
+        print('Adding toppings:' . PHP_EOL);
+
+        foreach ($this->toppings as $topping) {
+            print('     ' . $topping . PHP_EOL);
+        }
     }
 
     public function bake()
