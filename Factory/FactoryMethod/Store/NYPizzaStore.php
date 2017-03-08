@@ -2,8 +2,8 @@
 
 namespace HeadFirstDesignPatterns\Factory\FactoryMethod\Store;
 
-use HeadFirstDesignPatterns\Factory\FactoryMethod\Store\PizzaStore;
 use HeadFirstDesignPatterns\Factory\FactoryMethod\Pizza;
+use HeadFirstDesignPatterns\Factory\FactoryMethod\Store\PizzaStore;
 
 class NYPizzaStore extends PizzaStore
 {
