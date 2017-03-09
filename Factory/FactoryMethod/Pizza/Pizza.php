@@ -24,7 +24,7 @@ abstract class Pizza
         print('Adding toppings:' . PHP_EOL);
 
         foreach ($this->toppings as $topping) {
-            print('     ' . $topping . PHP_EOL);
+            print("\t" . $topping . PHP_EOL);
         }
     }
 
