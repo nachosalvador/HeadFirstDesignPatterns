@@ -9,13 +9,13 @@ $factory = new SimplePizzaFactory();
 $store = new PizzaStore($factory);
 
 $pizza = $store->orderPizza('cheese');
-print('We ordered a ' . $pizza->getName() . PHP_EOL);
+print('We ordered a ' . $pizza->getName() . "\n\n");
 
 $pizza = $store->orderPizza('veggie');
-print('We ordered a ' . $pizza->getName() . PHP_EOL);
+print('We ordered a ' . $pizza->getName() . "\n\n");
 
 $pizza = $store->orderPizza('clam');
-print('We ordered a ' . $pizza->getName() . PHP_EOL);
+print('We ordered a ' . $pizza->getName() . "\n\n");
 
 $pizza = $store->orderPizza('pepperoni');
-print('We ordered a ' . $pizza->getName() . PHP_EOL);
+print('We ordered a ' . $pizza->getName() . "\n\n");
