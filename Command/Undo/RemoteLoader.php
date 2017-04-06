@@ -12,7 +12,7 @@ use HeadFirstDesignPatterns\Command\Undo\Command\CeilingFanOffCommand;
 use HeadFirstDesignPatterns\Command\Undo\Command\LightOffCommand;
 use HeadFirstDesignPatterns\Command\Undo\Command\LightOnCommand;
 
-$remoteControlWithUndo = new remoteControlWithUndoWithUndo();
+$remoteControlWithUndo = new RemoteControlWithUndoWithUndo();
 
 $livingRoomLight = new Light('Living room');
 
