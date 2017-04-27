@@ -1,6 +1,8 @@
 <?php
 
-namespace HeadFirstDesignPatterns\Iterator\DinerMerger;
+namespace HeadFirstDesignPatterns\Iterator\DinerMergeri;
+
+use HeadFirstDesignPatterns\Iterator\DinerMergeri\ArrayListIterator;
 
 class ArrayList
 {
@@ -22,7 +24,12 @@ class ArrayList
     }
 
     public function size()
-    { 
+    {
         return count($this->array);
+    }
+
+    public function iterator()
+    {
+        return new ArrayListIterator($this);
     }
 }
