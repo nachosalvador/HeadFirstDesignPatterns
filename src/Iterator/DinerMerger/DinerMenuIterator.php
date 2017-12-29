@@ -6,7 +6,7 @@ use HeadFirstDesignPatterns\Iterator\DinerMerger\Iterator;
 
 class DinerMenuIterator implements Iterator
 {
-    private $items;
+    private $items = [];
     private $position = 0;
  
     public function __construct(array $items)
