@@ -2,9 +2,7 @@
 
 namespace HeadFirstDesignPatterns\Iterator\DinerMergeri;
 
-use HeadFirstDesignPatterns\Iterator\DinerMergeri\Iterator;
-
-class ArrayListIterator implements Iterator
+class ArrayListIterator implements \Iterator
 {
     private $items;
     private $position = 0;
@@ -14,12 +12,9 @@ class ArrayListIterator implements Iterator
         $this->items = $items;
     }
 
-    public function next()
+    public function current()
     {
-        $item = $this->items->get($this->position);
-        $this->position = $this->position + 1;
-        
-        return $item;
+        return $this->items[$this->position];
     }
 
     public function hasNext()
@@ -31,8 +26,31 @@ class ArrayListIterator implements Iterator
         }
     }
 
+    public function key()
+    {
+        return $this->position;
+    }
+
+    public function next()
+    {
+        $item = $this->items->get($this->position);
+        $this->position = $this->position + 1;
+        
+        return $item;
+    }
+
     public function remove()
     {
         $this->items->remove($this->position);
+    }
+
+    public function rewind()
+    {
+        $this->position = 0;
+    }
+
+    public function valid()
+    {
+        return isset($this->list[$this->position]);
     }
 }

@@ -2,7 +2,6 @@
 
 namespace HeadFirstDesignPatterns\Iterator\DinerMergeri;
 
-use HeadFirstDesignPatterns\Iterator\DinerMergeri\Iterator;
 use HeadFirstDesignPatterns\Iterator\DinerMergeri\Menu;
 
 class Waitress
@@ -16,7 +15,7 @@ class Waitress
         $this->dinerMenu = $dinerMenu;
     }
 
-    public function printMenu(Iterator $iterator = null)
+    public function printMenu(\Iterator $iterator = null)
     {
         if ($iterator == null) {
             $pancakeIterator = $this->pancakeHouseMenu->createIterator();
@@ -36,7 +35,7 @@ class Waitress
         }
     }
  
-    public function printVegetarianMenu(Iterator $iterator = null)
+    public function printVegetarianMenu(\Iterator $iterator = null)
     {
         if ($iterator == null) {
             print('VEGETARIAN MENU' . PHP_EOL . '----------------' . PHP_EOL . 'BREAKFAST' .PHP_EOL);
@@ -73,7 +72,7 @@ class Waitress
         return false;
     }
 
-    private function isVegetarian($name, Iterator $iterator)
+    private function isVegetarian($name, \Iterator $iterator)
     {
         while ($iterator->hasNext())
         {
